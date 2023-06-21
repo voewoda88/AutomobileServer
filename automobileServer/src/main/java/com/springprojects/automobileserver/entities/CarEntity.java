@@ -41,6 +41,7 @@ public class CarEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "manufacturer_id")
     @JsonBackReference
+    @NotNull
     private ManufacturerEntity manufacturer;
 
     public String getModelName() {
